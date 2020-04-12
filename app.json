@@ -1,12 +1,8 @@
 {
   "expo": {
-    "name": "CovidTrackerApp",
-    "slug": "CovidTrackerApp",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "name": "CovidLiveTracker",
+    "slug": "covid-live-tracker",
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,14 +11,20 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "sdkVersion": "37.0.0",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "dev.logesh.covidlivetracker",
+      "versionCode": 1
+    },
     "ios": {
+      "bundleIdentifier": "dev.logesh.covidlivetracker",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
-    }
+    },
+    "description": ""
   }
 }

@@ -6,17 +6,11 @@ import { AppParamList } from "./AppPramList";
 import { Center } from "./Center";
 import { Text } from "react-native";
 
+import { HomeStack } from "./HomeStack";
+
 interface AppTabsProps {}
 
 const Tabs = createBottomTabNavigator<AppParamList>();
-
-function Home() {
-  return (
-    <Center>
-      <Text>Home</Text>
-    </Center>
-  );
-}
 
 function Search() {
   return (
@@ -26,7 +20,7 @@ function Search() {
   );
 }
 
-export const AppTabs: React.FC<AppTabsProps> = ({}) => {
+export const AppTabs: React.FC<AppTabsProps> = () => {
   return (
     <Tabs.Navigator
       screenOptions={({ route }) => ({
@@ -43,7 +37,7 @@ export const AppTabs: React.FC<AppTabsProps> = ({}) => {
         inactiveTintColor: "gray",
       }}
     >
-      <Tabs.Screen name="Home" component={Home} />
+      <Tabs.Screen name="Home" component={HomeStack} />
       <Tabs.Screen name="Search" component={Search} />
     </Tabs.Navigator>
   );
