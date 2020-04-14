@@ -19,8 +19,8 @@
     "android": {
       "package": "dev.logesh.covidlivetracker",
       "versionCode": 1,
-      "config": {
-        "googleMapsApiKey": "AIzaSyAYsfA-3FNIpGbc-r1EZhk1FJOO_R-CUzQ"
+      "googleMaps": {
+        "apiKey": "AIzaSyAYsfA-3FNIpGbc-r1EZhk1FJOO_R-CUzQ"
       }
     },
     "ios": {
